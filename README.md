@@ -1,6 +1,6 @@
-*** 📇 Contact Manager CLI ***
+ **📇 CLI based Contact Manager**
 
-A minimal JSON-based contact manager built in Python for **Phase 1 – Python Intermediate | Day 2**.
+A minimal JSON-based contact manager built in Python.
 
 ## What It Does
 
@@ -8,13 +8,17 @@ A minimal JSON-based contact manager built in Python for **Phase 1 – Python In
 - 🔍 Search contacts by exact name
 - 💾 Auto-saves to `contacts.json`
 - 📂 Auto-loads on startup (creates file if missing)
+Installation & Usage
+Clone your repository (if you haven't already) and navigate into it:
 
-## Run It
-
-```bash
-python contact_manager.py
+```Bash
+git clone https://github.com/your-username/unprof.git
+cd unprof
 ```
-
+To execute the program 
+```Bash
+python3 contact_manager.py
+```
 ## Concepts Used
 
 | Concept | Where |
@@ -45,12 +49,4 @@ Enter contact name: Alice
 Enter phone number: 555-0123
 ✔️ Successfully saved Alice!
 ```
-Installation & Usage
-Clone your repository (if you haven't already) and navigate into it:
 
-Bash
-`git clone https://github.com/your-username/unprof.git
-cd unprof`
-*** To execute the program ***
-```Bash
-python3 contact_manager.py
