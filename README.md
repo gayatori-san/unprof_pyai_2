@@ -1,37 +1,55 @@
-<div align="center">
 
-# 📇 Contact Manager CLI
+readme_content = """# 📇 Contact Manager CLI
 
-**A lightweight, persistent command-line tool for managing your personal contacts.**
+A minimal JSON-based contact manager built in Python for **Phase 1 – Python Intermediate | Day 2**.
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
-[![JSON Data](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)](#)
-[![Terminal](https://img.shields.io/badge/CLI-4D4D4D?style=for-the-badge&logo=gnome-terminal&logoColor=white)](#)
+## What It Does
 
-</div>
+- ➕ Add contacts (name + phone)
+- 🔍 Search contacts by exact name
+- 💾 Auto-saves to `contacts.json`
+- 📂 Auto-loads on startup (creates file if missing)
 
----
+## Run It
 
-## 💡 About The Project
-
-This project is a fast, terminal-based Contact Management system built entirely in Python. Instead of relying on a heavy database, it utilizes **JSON file handling** to provide seamless, lightweight data persistence. 
-
-Any contact added through the command line is instantly formatted and saved to a local JSON file, ensuring your data remains safely stored even after the application is closed.
-
-### ✨ Key Features
-* **Interactive CLI Menu:** A clean, easy-to-navigate terminal loop.
-* **Add Contacts:** Save names and phone numbers instantly.
-* **Instant Search:** Query your address book by name to retrieve details.
-* **Data Persistence:** Automatic saving and loading using Python's native `json` library.
-* **Error Handling:** Gracefully handles missing files and empty inputs.
-
----
-
-## 🚀 How to Run It
-
-Since this is a standard Python script, it runs natively in your terminal without requiring any external libraries or complex environments.
-
-**1. Clone the repository**
 ```bash
-'git clone https://github.com/gayatori-san/unprof_pyai_2'
-python3 contact_manager.py
+python contact_manager.py
+```
+
+## Concepts Used
+
+| Concept | Where |
+|---------|-------|
+| `open()` | Reading/writing `contacts.json` |
+| `json.load()` | Loading saved contacts |
+| `json.dump()` | Saving contacts with pretty print |
+| `os.path.exists()` | Checking if file exists before opening |
+| `with` statement | Safe file handling |
+| `try/except` | Graceful handling of corrupted/empty files |
+
+## File Structure
+
+```
+contact_manager.py
+contacts.json     # auto-generated
+```
+
+## Example
+
+```
+[ Menu ]
+1. Add a new contact
+2. Search for a contact
+3. Exit
+Choose an option (1-3): 1
+Enter contact name: Alice
+Enter phone number: 555-0123
+✔️ Successfully saved Alice!
+```
+
+## Notes
+
+- Search is case-sensitive and exact-match
+- Each contact stores one phone number only
+- No edit/delete functionality (Day 2 scope)
+
