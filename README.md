@@ -2,15 +2,15 @@
 
 A minimal JSON-based contact manager built in Python.
 
-## What It Does
+ What It Does
 
 - ➕ Add contacts (name + phone)
 - 🔍 Search contacts by exact name
 - 💾 Auto-saves to `contacts.json`
 - 📂 Auto-loads on startup (creates file if missing)
+
 Installation & Usage
 Clone your repository (if you haven't already) and navigate into it:
-
 ```Bash
 git clone https://github.com/your-username/unprof.git
 cd unprof
@@ -19,7 +19,7 @@ To execute the program
 ```Bash
 python3 contact_manager.py
 ```
-## Concepts Used
+ Concepts Used
 
 | Concept | Where |
 |---------|-------|
@@ -30,14 +30,14 @@ python3 contact_manager.py
 | `with` statement | Safe file handling |
 | `try/except` | Graceful handling of corrupted/empty files |
 
-## File Structure
+ File Structure
 
 ```
 contact_manager.py
 contacts.json     # auto-generated
 ```
 
-## Example
+ Example
 
 ```
 [ Menu ]
