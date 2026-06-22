@@ -1,5 +1,4 @@
-
-readme_content = """# 📇 Contact Manager CLI
+*** 📇 Contact Manager CLI ***
 
 A minimal JSON-based contact manager built in Python for **Phase 1 – Python Intermediate | Day 2**.
 
@@ -46,10 +45,12 @@ Enter contact name: Alice
 Enter phone number: 555-0123
 ✔️ Successfully saved Alice!
 ```
+Installation & Usage
+Clone your repository (if you haven't already) and navigate into it:
 
-## Notes
-
-- Search is case-sensitive and exact-match
-- Each contact stores one phone number only
-- No edit/delete functionality (Day 2 scope)
-
+Bash
+`git clone https://github.com/your-username/unprof.git
+cd unprof`
+*** To execute the program ***
+```Bash
+python3 contact_manager.py
