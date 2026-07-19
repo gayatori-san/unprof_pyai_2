@@ -13,7 +13,7 @@ A minimal JSON-based contact manager built in Python.
 
 Clone the repository:
 ```Bash
-git clone https://github.com/your-username/unprof.git
+git clone https://github.com/gayatori-san/unprof_pyai_2.git
 cd unprof
 ```
 To execute the program 
